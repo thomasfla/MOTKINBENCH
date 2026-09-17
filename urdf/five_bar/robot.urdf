@@ -1,0 +1,425 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/581c9cc37f21d16430f878db/w/71943bc1e21e09c7efc95c4d/e/f006a340564aa87bd0b132ba -->
+<robot name="motkinbench_five_bar">
+  <!-- Link base_link -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+  </link>
+  <!-- Link case -->
+  <link name="case">
+    <inertial>
+      <origin xyz="0.00789938 0.0135971 0.00225065" rpy="0 0 0"/>
+      <mass value="0.193781"/>
+      <inertia ixx="0.000289186" ixy="0" ixz="0" iyy="0.000652997" iyz="-1.98334e-06" izz="0.000927223"/>
+    </inertial>
+    <!-- Part foot -->
+    <visual>
+      <origin xyz="0.00789938 0.0102628 -0.00394689" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/foot.stl"/>
+      </geometry>
+      <material name="foot_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00789938 0.0102628 -0.00394689" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/foot.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part foot_2 -->
+    <visual>
+      <origin xyz="0.00789938 0.100263 -0.00394689" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/foot.stl"/>
+      </geometry>
+      <material name="foot_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00789938 0.100263 -0.00394689" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/foot.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part conn_panel -->
+    <visual>
+      <origin xyz="0.00789938 -0.0455372 0.00805311" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/conn_panel.stl"/>
+      </geometry>
+      <material name="conn_panel_material">
+        <color rgba="0.909804 0.572549 0.164706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00789938 -0.0455372 0.00805311" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/conn_panel.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part stator -->
+    <visual>
+      <origin xyz="0.0578994 0.0302628 0.00105311" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/stator.stl"/>
+      </geometry>
+      <material name="stator_material">
+        <color rgba="0.439216 0.47451 0.501961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0578994 0.0302628 0.00105311" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/stator.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part stator_2 -->
+    <visual>
+      <origin xyz="-0.0421006 0.0302628 0.00105311" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/stator.stl"/>
+      </geometry>
+      <material name="stator_2_material">
+        <color rgba="0.439216 0.47451 0.501961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0421006 0.0302628 0.00105311" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/stator.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part foot_3 -->
+    <visual>
+      <origin xyz="-0.142101 0.100263 -0.00394689" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/foot.stl"/>
+      </geometry>
+      <material name="foot_3_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.142101 0.100263 -0.00394689" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/foot.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part foot_4 -->
+    <visual>
+      <origin xyz="-0.142101 0.0102628 -0.00394689" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/foot.stl"/>
+      </geometry>
+      <material name="foot_4_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.142101 0.0102628 -0.00394689" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/foot.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part case -->
+    <visual>
+      <origin xyz="0.00789938 0.0102628 -0.00394689" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/case.stl"/>
+      </geometry>
+      <material name="case_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00789938 0.0102628 -0.00394689" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/case.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link rotor -->
+  <link name="rotor">
+    <inertial>
+      <origin xyz="-0 -0.00341447 -0.0160121" rpy="0 0 0"/>
+      <mass value="0.0421552"/>
+      <inertia ixx="1.42858e-05" ixy="0" ixz="-0" iyy="8.06252e-06" iyz="-2.36787e-06" izz="1.35352e-05"/>
+    </inertial>
+    <!-- Part rotor -->
+    <visual>
+      <origin xyz="0 0 0.007" rpy="3.14159 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/rotor.stl"/>
+      </geometry>
+      <material name="rotor_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.007" rpy="3.14159 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/rotor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part arm_l1 -->
+    <visual>
+      <origin xyz="0 -0.06 -0.03" rpy="3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/arm_l1.stl"/>
+      </geometry>
+      <material name="arm_l1_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.06 -0.03" rpy="3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/arm_l1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link arm_l2 -->
+  <link name="arm_l2">
+    <inertial>
+      <origin xyz="0.0486799 0 -0.00203243" rpy="0 0 0"/>
+      <mass value="0.00836663"/>
+      <inertia ixx="1.67009e-07" ixy="0" ixz="2.2447e-08" iyy="1.30505e-05" iyz="0" izz="1.31626e-05"/>
+    </inertial>
+    <!-- Part arm_l2 -->
+    <visual>
+      <origin xyz="0 0 -0.0005" rpy="-3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/arm_l2.stl"/>
+      </geometry>
+      <material name="arm_l2_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0005" rpy="-3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/arm_l2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Frame closing_tip_2 (dummy link + fixed joint) -->
+  <link name="closing_tip_2">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="closing_tip_2_frame" type="fixed">
+    <origin xyz="0.1 0 0" rpy="3.14159 0 -1.5708"/>
+    <parent link="arm_l2"/>
+    <child link="closing_tip_2"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Frame closing_tip_2_z (dummy link + fixed joint) -->
+  <link name="closing_tip_2_z">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="closing_tip_2_z_frame" type="fixed">
+    <origin xyz="0.1 0 -0.1" rpy="3.14159 0 -1.5708"/>
+    <parent link="arm_l2"/>
+    <child link="closing_tip_2_z"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Joint from rotor to arm_l2 -->
+  <joint name="passive_1" type="continuous">
+    <origin xyz="0 -0.06 -0.035" rpy="-0 0 -0.212054"/>
+    <parent link="rotor"/>
+    <child link="arm_l2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Joint from case to rotor -->
+  <joint name="motor_1" type="continuous">
+    <origin xyz="-0.0421006 0.0302628 0.00805311" rpy="-3.14159 0 0.662203"/>
+    <parent link="case"/>
+    <child link="rotor"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link rotor_2 -->
+  <link name="rotor_2">
+    <inertial>
+      <origin xyz="0 -0.00413346 -0.012052" rpy="0 0 0"/>
+      <mass value="0.0348226"/>
+      <inertia ixx="1.09011e-05" ixy="-0" ixz="-0" iyy="4.78125e-06" iyz="-1.35457e-06" izz="1.24874e-05"/>
+    </inertial>
+    <!-- Part arm_r1 -->
+    <visual>
+      <origin xyz="0 -0.06 -0.019" rpy="3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/arm_r1.stl"/>
+      </geometry>
+      <material name="arm_r1_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.06 -0.019" rpy="3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/arm_r1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part rotor_2 -->
+    <visual>
+      <origin xyz="0 0 0.007" rpy="3.14159 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/rotor.stl"/>
+      </geometry>
+      <material name="rotor_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.007" rpy="3.14159 -0 -0"/>
+      <geometry>
+        <mesh filename="package://assets/rotor.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link arm_r2 -->
+  <link name="arm_r2">
+    <inertial>
+      <origin xyz="0.0328205 -0.0449868 -0.00311181" rpy="0 0 0"/>
+      <mass value="0.00968954"/>
+      <inertia ixx="1.06339e-05" ixy="7.56672e-06" ixz="2.86385e-07" iyy="5.7826e-06" iyz="-3.92545e-07" izz="1.62905e-05"/>
+    </inertial>
+    <!-- Part arm_r2 -->
+    <visual>
+      <origin xyz="0 0 -0.0005" rpy="-3.14159 0 -0.940506"/>
+      <geometry>
+        <mesh filename="package://assets/arm_r2.stl"/>
+      </geometry>
+      <material name="arm_r2_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0005" rpy="-3.14159 0 -0.940506"/>
+      <geometry>
+        <mesh filename="package://assets/arm_r2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Frame closing_tip_1 (dummy link + fixed joint) -->
+  <link name="closing_tip_1">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="closing_tip_1_frame" type="fixed">
+    <origin xyz="0.0589379 -0.0807857 -0.011" rpy="-3.14159 0 -0.940506"/>
+    <parent link="arm_r2"/>
+    <child link="closing_tip_1"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Frame closing_tip_1_z (dummy link + fixed joint) -->
+  <link name="closing_tip_1_z">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="closing_tip_1_z_frame" type="fixed">
+    <origin xyz="0.0589379 -0.0807857 -0.111" rpy="-3.14159 0 -0.940506"/>
+    <parent link="arm_r2"/>
+    <child link="closing_tip_1_z"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Joint from rotor_2 to arm_r2 -->
+  <joint name="passive_2" type="continuous">
+    <origin xyz="0 -0.06 -0.024" rpy="-0 -0 -1.5708"/>
+    <parent link="rotor_2"/>
+    <child link="arm_r2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Joint from case to rotor_2 -->
+  <joint name="motor_2" type="continuous">
+    <origin xyz="0.0578994 0.0302628 0.00805311" rpy="3.14159 0 -0.0662491"/>
+    <parent link="case"/>
+    <child link="rotor_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Joint from base_link to case -->
+  <joint name="base_link_to_case" type="fixed">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <parent link="base_link"/>
+    <child link="case"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link c_0402_1005metric -->
+  <link name="c_0402_1005metric">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+  </link>
+  <!-- Joint from base_link to c_0402_1005metric -->
+  <joint name="base_link_to_c_0402_1005metric" type="fixed">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <parent link="base_link"/>
+    <child link="c_0402_1005metric"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link top_cover -->
+  <link name="top_cover">
+    <inertial>
+      <origin xyz="0.00788351 0.00728336 0.0185531" rpy="0 0 0"/>
+      <mass value="0.0649221"/>
+      <inertia ixx="7.68894e-05" ixy="-4.728e-08" ixz="0" iyy="0.000165678" iyz="0" izz="0.00024247"/>
+    </inertial>
+    <!-- Part top_cover -->
+    <visual>
+      <origin xyz="0.00789938 0.0102628 -0.00394689" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/top_cover.stl"/>
+      </geometry>
+      <material name="top_cover_material">
+        <color rgba="0.941176 0.87451 0.678431 0.231373"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00789938 0.0102628 -0.00394689" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/top_cover.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base_link to top_cover -->
+  <joint name="base_link_to_top_cover" type="fixed">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <parent link="base_link"/>
+    <child link="top_cover"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+</robot>

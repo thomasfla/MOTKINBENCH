@@ -1,0 +1,23 @@
+{
+  "url": "https://cad.onshape.com/documents/581c9cc37f21d16430f878db/w/71943bc1e21e09c7efc95c4d/e/f006a340564aa87bd0b132ba",
+  "robot_name": "motkinbench_five_bar",
+  "output_format": "urdf",
+  "add_dummy_base_link": true,
+  "ignore_limits": true,
+  "joint_properties": {
+    "motor_1": {
+      "type": "continuous"
+    },
+    "motor_2": {
+      "type": "continuous"
+    },
+    "passive_1": {
+      "type": "continuous",
+      "actuated": false
+    },
+    "passive_2": {
+      "type": "continuous",
+      "actuated": false
+    }
+  }
+}
